@@ -42,7 +42,7 @@ app.post("/", function(req, res) {
 
     const options = {
       method: "POST",
-      auth: "dianadai:c75587961384df5110cd028e4493168e-us" //authentication
+      auth: "dianadai:c75587961384df5110cd028e4493168e-us2" //authentication
     }
 
 //make https request
