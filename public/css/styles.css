@@ -1,5 +1,176 @@
-
+/* TinDog */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
 body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight:
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#Signup .big-heading{
+  margin:30px;
+}
+/* Sections */
+.colored-section{
+  background-color: #ff4c68;
+  color: white;
+}
+.white-section{
+  background-color: white;
+}
+
+/* Title Section */
+#title .container-fluid{
+  padding: 3% 15% 10%;
+  text-align: left;
+}
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Feature Section  */
+#features {
+  position: relative;
+}
+
+
+.feature-icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+.feature-box {
+  padding: 5%;
+}
+.feature-title{
+  font-size: 1.5rem;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+
+/* Testimonial Section */
+#testimonials{
+  background-color: #ef8172;
+}
+
+.testimonial-img {
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-col {
+  padding: 3%;
+}
+.price-text{
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+@media(max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.footer-icon {
+  margin: 10px 20px;
+  width: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Newsletter */
+/* body {
   height: 100%;
 }
 
@@ -11,11 +182,10 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f5f5f5;
-}
+} */
 
 .form-signin {
-  width: 100%;
-  max-width: 330px;
+  width: 70%;
   padding: 15px;
   margin: auto;
 }
@@ -46,4 +216,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.signup-box{
+  margin:30px 0 0 0;
 }

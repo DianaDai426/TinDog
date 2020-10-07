@@ -18,7 +18,8 @@ app.listen(process.env.PORT || 3000, function() {
 })
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/signup.html")
+  res.sendFile(__dirname + "/index.html")
+
 })
 
 app.post("/", function(req, res) {
