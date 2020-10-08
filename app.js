@@ -1,5 +1,5 @@
 //mailchimp.com/developer
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -39,11 +39,11 @@ app.post("/", function(req, res) {
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us2.api.mailchimp.com/3.0/lists/d64d1f760d";
+    const url = "https://us2.api.mailchimp.com/3.0/lists/"+process.env.list_ID;
 
     const options = {
       method: "POST",
-      auth: "dianadai:c75587961384df5110cd028e4493168e-us2" //authentication
+      auth: "dianadai:"+process.env.API_KEY //authentication
     }
 
 //make https request
@@ -65,10 +65,3 @@ app.post("/", function(req, res) {
 app.post("/failure", function(req,res){
   res.redirect("/")
 })
-
-
-// API key
-// c75587961384df5110cd028e4493168e-us2
-
-// List id
-// d64d1f760d
